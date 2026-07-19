@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rafiq Hasan — Portfolio</title>
+<meta name="description" content="Rafiq Hasan — Student, builder, multi-disciplinary creator. Projects, skills, and writing.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ CUSTOM CURSOR GLOW ============ -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">RH<span class="dot">.</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#blog" class="nav-link">Writing</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="assets/resume.pdf" download class="btn-ghost">Resume</a>
+      <button class="burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="mesh"></div>
+  <div class="mesh mesh-2"></div>
+
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">// currently learning, building, breaking things</p>
+      <h1 class="hero-title">
+        Rafiq Hasan builds
+        <span class="grad-text">things that work</span>
+        — and writes about how.
+      </h1>
+      <p class="hero-sub">
+        A CS student in Dhaka who moves between code, design, and words.
+        I ship small projects often, and this page is the running log.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">See the work</a>
+        <a href="#contact" class="btn-outline">Say hello</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-count="12">0</span>
+          <span class="stat-label">Projects shipped</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="6">0</span>
+          <span class="stat-label">Tools I reach for daily</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="3">0</span>
+          <span class="stat-label">Years writing code</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signature element: tilting glass ID card -->
+    <div class="id-card-wrap">
+      <div class="id-card" id="idCard">
+        <div class="id-card-top">
+          <span class="id-tag">STUDENT ID</span>
+          <span class="id-chip"></span>
+        </div>
+        <div class="id-avatar">RH</div>
+        <h3 class="id-name">Rafiq Hasan</h3>
+        <p class="id-role">CS Student · Builder</p>
+        <div class="id-meta">
+          <div><span>Based in</span><strong>Dhaka, BD</strong></div>
+          <div><span>Focus</span><strong>Web · Design</strong></div>
+        </div>
+        <div class="id-barcode"></div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll down">
+    <span></span>
+  </a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="section-inner about-grid">
+    <div class="section-head">
+      <p class="eyebrow">About</p>
+      <h2 class="section-title">Still figuring it out — on purpose.</h2>
+    </div>
+
+    <div class="about-body">
+      <p>
+        I'm a third-year Computer Science student who treats every course, club,
+        and side project as a chance to make something real instead of just
+        reading about it. I started with static websites, got curious about
+        why they broke, and haven't stopped poking at things since.
+      </p>
+      <p>
+        Right now my time is split between frontend engineering, a bit of UI
+        design, and writing short breakdowns of what I learn — partly for
+        other students, mostly so future-me remembers how I solved it the
+        first time.
+      </p>
+
+      <div class="about-facts">
+        <div class="fact-card">
+          <h4>Education</h4>
+          <p>B.Sc. in Computer Science &amp; Engineering<br><span class="muted">2023 — Present</span></p>
+        </div>
+        <div class="fact-card">
+          <h4>Interests</h4>
+          <p>Web development, product design, open-source, technical writing</p>
+        </div>
+        <div class="fact-card">
+          <h4>Currently</h4>
+          <p>Building a habit-tracking app and learning system design fundamentals</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section section-alt" id="skills">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="eyebrow">Skills</p>
+      <h2 class="section-title">The toolbox, honestly rated.</h2>
+      <p class="section-desc">Not a checklist for recruiters — an actual sense of where I'm strong and where I'm still climbing.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-col">
+        <h3 class="skill-col-title">Languages</h3>
+        <div class="skill-bar"><span>JavaScript</span><div class="bar"><i style="--val:88%"></i></div></div>
+        <div class="skill-bar"><span>Python</span><div class="bar"><i style="--val:80%"></i></div></div>
+        <div class="skill-bar"><span>C++</span><div class="bar"><i style="--val:70%"></i></div></div>
+        <div class="skill-bar"><span>SQL</span><div class="bar"><i style="--val:65%"></i></div></div>
+      </div>
+
+      <div class="skill-col">
+        <h3 class="skill-col-title">Tools &amp; Frameworks</h3>
+        <div class="skill-bar"><span>React</span><div class="bar"><i style="--val:82%"></i></div></div>
+        <div class="skill-bar"><span>Node.js</span><div class="bar"><i style="--val:75%"></i></div></div>
+        <div class="skill-bar"><span>Figma</span><div class="bar"><i style="--val:78%"></i></div></div>
+        <div class="skill-bar"><span>Git &amp; GitHub</span><div class="bar"><i style="--val:85%"></i></div></div>
+      </div>
+
+      <div class="skill-col">
+        <h3 class="skill-col-title">Currently learning</h3>
+        <div class="tag-cloud">
+          <span class="tag">System Design</span>
+          <span class="tag">Docker</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Next.js</span>
+          <span class="tag">UI Motion</span>
+        </div>
+        <h3 class="skill-col-title" style="margin-top:28px">Soft skills</h3>
+        <div class="tag-cloud">
+          <span class="tag tag-alt">Technical writing</span>
+          <span class="tag tag-alt">Team leadership</span>
+          <span class="tag tag-alt">Public speaking</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="eyebrow">Projects</p>
+      <h2 class="section-title">Selected work.</h2>
+      <p class="section-desc">A mix of class projects, side builds, and things made purely out of curiosity.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <article class="project-card featured">
+        <div class="project-media" style="--c1:#7C6FFF; --c2:#4EE1D6;">
+          <span class="project-index">01</span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+          <h3>HabitLoop</h3>
+          <p>A habit-tracking web app with streaks, weekly insights, and a
+             minimal UI designed to stay out of your way. Built to actually
+             use myself, not just to put on this page.</p>
+          <div class="project-links">
+            <a href="#" class="link-arrow">Live demo →</a>
+            <a href="#" class="link-arrow">Source code →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-media" style="--c1:#FFB84D; --c2:#7C6FFF;">
+          <span class="project-index">02</span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>Python</span><span>Pandas</span></div>
+          <h3>Campus Bus Tracker</h3>
+          <p>A small data project that scrapes and visualizes campus shuttle
+             timing to help students catch the right bus.</p>
+          <div class="project-links">
+            <a href="#" class="link-arrow">Source code →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-media" style="--c1:#4EE1D6; --c2:#FFB84D;">
+          <span class="project-index">03</span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>Figma</span><span>Design</span></div>
+          <h3>StudyDesk — UI Kit</h3>
+          <p>A free component kit for student productivity apps, designed
+             around focus sessions and lightweight task capture.</p>
+          <div class="project-links">
+            <a href="#" class="link-arrow">View on Figma →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-media" style="--c1:#7C6FFF; --c2:#FFB84D;">
+          <span class="project-index">04</span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>JavaScript</span><span>API</span></div>
+          <h3>Weatherline</h3>
+          <p>A tiny weather widget with a hand-drawn-style forecast chart,
+             built to practice working with public APIs and SVG animation.</p>
+          <div class="project-links">
+            <a href="#" class="link-arrow">Live demo →</a>
+            <a href="#" class="link-arrow">Source code →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ BLOG / WRITING ============ -->
+<section class="section section-alt" id="blog">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="eyebrow">Writing</p>
+      <h2 class="section-title">Notes from the process.</h2>
+      <p class="section-desc">Short write-ups on what broke, what I learned, and what I'd do differently.</p>
+    </div>
+
+    <div class="blog-grid">
+      <article class="blog-card">
+        <span class="blog-date">Mar 2026</span>
+        <h3>What I learned shipping my first React app</h3>
+        <p>Three mistakes I made with state management, and the simple pattern that fixed all of them.</p>
+        <a href="#" class="link-arrow">Read →</a>
+      </article>
+      <article class="blog-card">
+        <span class="blog-date">Jan 2026</span>
+        <h3>A student's honest guide to picking your first stack</h3>
+        <p>Less about what's trendy, more about what will actually get you unstuck at 1am.</p>
+        <a href="#" class="link-arrow">Read →</a>
+      </article>
+      <article class="blog-card">
+        <span class="blog-date">Nov 2025</span>
+        <h3>Notes on designing for people who won't read the docs</h3>
+        <p>What a campus usability test taught me about defaults and empty states.</p>
+        <a href="#" class="link-arrow">Read →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="section-inner contact-grid">
+    <div class="section-head">
+      <p class="eyebrow">Contact</p>
+      <h2 class="section-title">Let's talk.</h2>
+      <p class="section-desc">
+        Open to internships, collaborations, or just a good conversation
+        about something you're building.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:rafiq.hasan@example.com" class="contact-link">rafiq.hasan@example.com</a>
+        <a href="#" class="contact-link">github.com/rafiqhasan</a>
+        <a href="#" class="contact-link">linkedin.com/in/rafiqhasan</a>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+      </div>
+      <button type="submit" class="btn-primary full">Send message</button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="#home" class="logo">RH<span class="dot">.</span></a>
+    <p class="footer-text">Designed &amp; built by Rafiq Hasan · <span id="year"></span></p>
+    <a href="#home" class="back-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
