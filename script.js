@@ -94,14 +94,42 @@ const statObserver = new IntersectionObserver((entries) => {
 statNums.forEach(el => statObserver.observe(el));
 
 // ================================================
-// CONTACT FORM (client-side only — see README to connect it)
+// CONTACT FORM — submits to FormSubmit.co via AJAX
 // ================================================
 const contactForm = document.getElementById('contactForm');
 const formNote = document.getElementById('formNote');
+const submitBtn = contactForm.querySelector('button[type="submit"]');
 
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
-  formNote.textContent = 'Thanks — this demo form isn\u2019t connected yet. See the README to wire it up.';
+
+  const originalLabel = submitBtn.textContent;
+  submitBtn.textContent = 'Sending…';
+  submitBtn.disabled = true;
+  formNote.textContent = '';
+  formNote.style.color = '';
+
+  try {
+    const formData = new FormData(contactForm);
+    const response = await fetch('https://formsubmit.co/ajax/it24026@mbstu.ac.bd', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: formData
+    });
+
+    if (response.ok) {
+      formNote.textContent = 'Message sent — thanks for reaching out! I\u2019ll reply soon.';
+      contactForm.reset();
+    } else {
+      throw new Error('Request failed');
+    }
+  } catch (err) {
+    formNote.style.color = '#FF7A7A';
+    formNote.textContent = 'Something went wrong. Please email me directly instead.';
+  } finally {
+    submitBtn.textContent = originalLabel;
+    submitBtn.disabled = false;
+  }
 });
 
 // ================================================

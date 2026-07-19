@@ -37,19 +37,14 @@ portfolio/
 
 ---
 
-## ✅ Step 3: Contact Form কাজ করানো (Backend ছাড়াই)
+## ✅ Step 3: Contact Form — already connected!
 
-এখন contact form টা শুধু demo — কোনো email পাঠায় না। এটা free এ কাজ করানোর 2 টা সহজ উপায়:
+আপনার contact form টা এখন **FormSubmit.co** দিয়ে connect করা আছে, email যাবে: `it24026@mbstu.ac.bd`
 
-**Option A — Formsubmit.co (সবচেয়ে সহজ)**
-`index.html` এ `<form class="contact-form" id="contactForm">` লাইনটা বদলে করুন:
-```html
-<form class="contact-form" id="contactForm" action="https://formsubmit.co/apnar-email@gmail.com" method="POST">
-```
-এবং `script.js` থেকে form এর `submit` event listener টা remove করে দিন (নাহলে page reload হবে না)।
+⚠️ **প্রথমবার একটা জরুরি কাজ করতে হবে:**
+Site live করার পর, ওখান থেকে একবার নিজে test message পাঠান। FormSubmit আপনার email-এ একটা **confirmation/activation email** পাঠাবে — সেই email এ গিয়ে "Activate Form" লিংকে ক্লিক করুন। এটা একবারই করতে হবে, তারপর থেকে সব message সরাসরি আপনার email এ চলে আসবে (page reload ছাড়াই, সুন্দর success message দেখাবে)।
 
-**Option B — EmailJS**
-[emailjs.com](https://www.emailjs.com) এ free account বানিয়ে তাদের JS snippet `script.js` এ যোগ করুন। এটাতে বেশি customization পাবেন।
+যদি email বদলাতে চান পরে, `index.html` এ `action="https://formsubmit.co/..."` এবং `script.js` এ একই email — দুই জায়গাতেই বদলাতে হবে।
 
 ---
 
